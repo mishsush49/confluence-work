@@ -2,14 +2,14 @@
 
 curl --location 'https://<<replace_conf_space>>.atlassian.net/wiki/rest/api/content/' \
 --header 'Content-Type: application/json' \
---user '<replace_user_email>:<replace_api_token>' \
+--header "Authorization: Basic <<Generated base64 string output of echo command>>" \
 --data '{
     "space": {"key": "<replace_conf_space_key>"},
     "type": "page",
-    "title": "Page created from code",
+    "title": "Page created1111",
     "body": {
         "storage": {
-            "value": "This is the sample script22",
+            "value": "This is the sample script23",
             "description": "wiki",
             "representation": "storage"
         }
